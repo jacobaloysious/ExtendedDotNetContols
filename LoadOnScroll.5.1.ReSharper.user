@@ -1,0 +1,154 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="26D2E401-955B-443B-8364-E1A91AAE996D/f:Extensions.cs" caret="1261" fromTop="37" />
+      <File id="D975D5E7-223C-41ED-B186-198F71BB2918/f:MyExtendedTestListBox.cs" caret="965" fromTop="13" />
+      <File id="26D2E401-955B-443B-8364-E1A91AAE996D/f:ExtendedListBox.cs" caret="2359" fromTop="67" />
+      <File id="D975D5E7-223C-41ED-B186-198F71BB2918/f:MainWindow.xaml" caret="374" fromTop="3" />
+      <File id="D975D5E7-223C-41ED-B186-198F71BB2918/f:MainWindow.xaml.cs" caret="650" fromTop="23" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="D975D5E7-223C-41ED-B186-198F71BB2918/f:MainWindow.xaml.cs" caret="667" fromTop="21" />
+      <File id="D975D5E7-223C-41ED-B186-198F71BB2918/f:MainWindow.xaml.cs" caret="667" fromTop="12" />
+      <File id="D975D5E7-223C-41ED-B186-198F71BB2918/f:MainWindow.xaml.cs" caret="667" fromTop="33" />
+      <File id="D975D5E7-223C-41ED-B186-198F71BB2918/f:MainWindow.xaml.cs" caret="670" fromTop="19" />
+      <File id="D975D5E7-223C-41ED-B186-198F71BB2918/f:MyExtendedTestListBox.cs" caret="729" fromTop="14" />
+      <File id="D975D5E7-223C-41ED-B186-198F71BB2918/f:MainWindow.xaml" caret="343" fromTop="3" />
+      <File id="D975D5E7-223C-41ED-B186-198F71BB2918/f:MyExtendedTestListBox.cs" caret="653" fromTop="19" />
+      <File id="D975D5E7-223C-41ED-B186-198F71BB2918/f:MainWindow.xaml.cs" caret="670" fromTop="15" />
+      <File id="26D2E401-955B-443B-8364-E1A91AAE996D/f:ExtendedListBox.cs" caret="248" fromTop="7" />
+      <File id="26D2E401-955B-443B-8364-E1A91AAE996D/f:ExtendedListBox.cs" caret="603" fromTop="11" />
+      <File id="26D2E401-955B-443B-8364-E1A91AAE996D/f:ExtendedListBox.cs" caret="2623" fromTop="8" />
+      <File id="26D2E401-955B-443B-8364-E1A91AAE996D/f:Extensions.cs" caret="156" fromTop="6" />
+      <File id="26D2E401-955B-443B-8364-E1A91AAE996D/f:Extensions.cs" caret="1261" fromTop="37" />
+      <File id="D975D5E7-223C-41ED-B186-198F71BB2918/f:MyExtendedTestListBox.cs" caret="587" fromTop="16" />
+      <File id="D975D5E7-223C-41ED-B186-198F71BB2918/f:MyExtendedTestListBox.cs" caret="222" fromTop="8" />
+      <File id="D975D5E7-223C-41ED-B186-198F71BB2918/f:MyExtendedTestListBox.cs" caret="367" fromTop="12" />
+      <File id="D975D5E7-223C-41ED-B186-198F71BB2918/f:MyExtendedTestListBox.cs" caret="1091" fromTop="17" />
+      <File id="26D2E401-955B-443B-8364-E1A91AAE996D/f:ExtendedListBox.cs" caret="2359" fromTop="19" />
+      <File id="D975D5E7-223C-41ED-B186-198F71BB2918/f:MyExtendedTestListBox.cs" caret="965" fromTop="13" />
+      <File id="D975D5E7-223C-41ED-B186-198F71BB2918/f:MainWindow.xaml" caret="278" fromTop="1" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir>C:\Program Files (x86)\NUnit 2.5.10\bin\net-2.0\</NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="private" priority="6" />
+      <Item value="this" priority="19" />
+      <Item value="void" priority="1" />
+      <Item value="listBox" priority="0" />
+      <Item value="ListView`0" priority="0" />
+      <Item value="v" priority="0" />
+      <Item value="int" priority="8" />
+      <Item value="panel" priority="0" />
+      <Item value="count" priority="4" />
+      <Item value="some`0" priority="0" />
+      <Item value="MessageBox`0" priority="1" />
+      <Item value="scrollViewer" priority="1" />
+      <Item value="public" priority="2" />
+      <Item value="GetChild`0" priority="1" />
+      <Item value="startIndex" priority="5" />
+      <Item value="return" priority="4" />
+      <Item value="finalIndex" priority="2" />
+      <Item value="for" priority="0" />
+      <Item value="currentIndex" priority="3" />
+      <Item value="if" priority="2" />
+      <Item value="var" priority="4" />
+      <Item value="IEnumerable" priority="0" />
+      <Item value="string" priority="10" />
+      <Item value="new" priority="2" />
+      <Item value="List" priority="2" />
+      <Item value="itemSource" priority="1" />
+      <Item value="foreach" priority="0" />
+      <Item value="listItem" priority="0" />
+      <Item value="GetAlternationIndex`0" priority="0" />
+      <Item value="SetFlowDirection`0" priority="0" />
+      <Item value="TimeSpan`0" priority="0" />
+      <Item value="static" priority="0" />
+      <Item value="bool" priority="0" />
+      <Item value="hai" priority="1" />
+      <Item value="true" priority="0" />
+      <Item value="IObservable" priority="0" />
+      <Item value="someList" priority="0" />
+      <Item value="ObservableCollection&lt;string&gt;" priority="1" />
+      <Item value="base" priority="0" />
+      <Item value="object" priority="1" />
+      <Item value="where" priority="1" />
+      <Item value="class" priority="0" />
+      <Item value="T`0" priority="1" />
+      <Item value="index" priority="1" />
+      <Item value="T" priority="0" />
+      <Item value="ListBoxItem`0" priority="0" />
+      <Item value="ListBox`0" priority="0" />
+      <Item value="abstract" priority="3" />
+      <Item value="ExtendedListBox`0" priority="0" />
+      <Item value="sealed" priority="0" />
+      <Item value="protected" priority="0" />
+      <Item value="virtual" priority="0" />
+      <Item value="null" priority="1" />
+      <Item value="child" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:LoadOnScroll.MainWindow">
+      <Item value="listbox1" priority="0" />
+      <Item value="listBox" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.VirtualizingStackPanel">
+      <Item value="ViewportHeight" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Int32">
+      <Item value="ToString`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.MessageBox">
+      <Item value="Show`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.ScrollViewer">
+      <Item value="VerticalOffset" priority="0" />
+      <Item value="ViewportHeight" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Double">
+      <Item value="ToString`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:LoadOnScroll.ExtendedListBox">
+      <Item value="Loaded" priority="0" />
+      <Item value="Items" priority="7" />
+      <Item value="DataBase" priority="0" />
+      <Item value="ItemsSource" priority="0" />
+      <Item value="CurrentList" priority="3" />
+      <Item value="InvalidateVisual`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.ItemCollection">
+      <Item value="Count" priority="4" />
+      <Item value="Add`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="ToList`1" priority="2" />
+      <Item value="Count`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:LoadOnScroll.ExtendedListBox`1">
+      <Item value="DataBase" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:LoadOnScroll.TestListBox">
+      <Item value="DataBase" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:LoadOnScroll.MyExtendedTestListBox">
+      <Item value="DataBase" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>
