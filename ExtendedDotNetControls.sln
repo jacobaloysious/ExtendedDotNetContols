@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoadOnScroll", "LoadOnScroll\LoadOnScroll.csproj", "{D975D5E7-223C-41ED-B186-198F71BB2918}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoExtendedControls", "DemoExtendedControls\DemoExtendedControls.csproj", "{D975D5E7-223C-41ED-B186-198F71BB2918}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtendedControls", "ExtendedControls\ExtendedControls.csproj", "{26D2E401-955B-443B-8364-E1A91AAE996D}"
 EndProject
