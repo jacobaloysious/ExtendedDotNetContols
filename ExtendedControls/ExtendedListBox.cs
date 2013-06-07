@@ -13,13 +13,13 @@ namespace ExtendedControls
             this.Loaded += (ExtendedListBoxLoaded);
         }
 
-        public abstract ObservableCollection<string> InitialItems
+        public abstract ObservableCollection<object> InitialItems
         {
             get;
             set;
         }
 
-        public abstract string GetChild(int index);
+        public abstract object GetChild(int index);
 
         #region Private Helpers
         
@@ -54,13 +54,9 @@ namespace ExtendedControls
                 return;
             }
 
-            var currentItemsCount= startIndex;
-            if (this.Items.Count < finalIndex && this.Items.Count > startIndex)
-            {
-                currentItemsCount = this.Items.Count;
-            }
+            var currentItemsCount = this.Items.Count > startIndex ? this.Items.Count : startIndex;
 
-            var dumyList = new List<string>();
+            var dumyList = new List<object>();
             for (int currentIndex = currentItemsCount; currentIndex < finalIndex; currentIndex++)
             {
                 var child = GetChild(currentIndex);
@@ -68,13 +64,13 @@ namespace ExtendedControls
                     dumyList.Add(child);
             }
 
-            var itemSource = this.InitialItems;
             foreach (var listItem in dumyList)
             {
-                itemSource.Add(listItem);
+                this.InitialItems.Add(listItem);
             }
 
-            this.ItemsSource = itemSource;
+            //Reset the item source
+            this.ItemsSource = this.InitialItems;
         }
 
         #endregion

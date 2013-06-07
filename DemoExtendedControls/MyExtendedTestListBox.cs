@@ -15,7 +15,7 @@ namespace LoadOnScroll
 
             var someList = from i in Enumerable.Range(0, 6) select "Item" + i.ToString();
 
-            this.InitialItems = new ObservableCollection<string>(someList.ToList<string>());
+            this.InitialItems = new ObservableCollection<object>(someList.ToList<string>());
 
             this.ItemsSource = this.InitialItems;
         }
@@ -25,16 +25,16 @@ namespace LoadOnScroll
             get; set;
         }
 
-        public override ObservableCollection<string> InitialItems
+        public override ObservableCollection<object> InitialItems
         {
             get; set; 
         }
 
-        public override string GetChild(int index)
+        public override object GetChild(int index)
         {
             if (this.DataBase.Count() > index)
             {
-                return this.DataBase.ToList<string>()[index];
+                return this.DataBase.ToList<object>()[index];
             }
             return null;
         }
