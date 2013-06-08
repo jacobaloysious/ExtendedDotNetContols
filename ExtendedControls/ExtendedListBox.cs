@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Runtime.InteropServices;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 
@@ -11,18 +12,71 @@ namespace ExtendedControls
         protected ExtendedListBox()
         {
             this.Loaded += (ExtendedListBoxLoaded);
+            this.LayoutUpdated += (EventLayoutUpdated); 
         }
 
+        #region Private Members
+
+        private bool IsScrollVisible
+        {
+            get
+            {
+                var scrollViewer = this.ScrollViewer;
+                if (scrollViewer != null)
+                {
+                    var visibility = scrollViewer.ComputedVerticalScrollBarVisibility;
+                    if (visibility.ToString() == "Visible")
+                    {
+                        return true;
+                    }
+                }
+                return false;
+            }
+        }
+
+        private ScrollViewer ScrollViewer
+        {
+            get { return this.GetVisualChild<ScrollViewer>(); }
+        }
+
+        private ScrollBar ScrollBar
+        {
+            get
+            {
+                var scrollViewer = this.ScrollViewer;
+                if (scrollViewer != null)
+                {
+                    return scrollViewer.Template.FindName("PART_VerticalScrollBar", scrollViewer) as ScrollBar;
+                }
+                return null;
+            }
+        }
+
+        #endregion
+
+        #region Public Methods
+        
         public abstract ObservableCollection<object> InitialItems
         {
             get;
             set;
         }
-
+       
         public abstract object GetChild(int index);
 
+        #endregion
+
         #region Private Helpers
-        
+
+        private void EventLayoutUpdated(object sender, EventArgs e)
+        {
+            // Keep adding Children until Scroll Is Visible
+            if (!this.IsScrollVisible)
+            {
+               LoadChildren();
+            }
+        }
+
         /// <summary>
         /// Courtesy: http://social.msdn.microsoft.com/forums/en-US/wpf/thread/2d527831-43aa-4fd5-8b7b-08cb5c4ed1db
         /// </summary>
@@ -30,23 +84,23 @@ namespace ExtendedControls
         /// <param name="e"></param>
         private void ExtendedListBoxLoaded(object sender, System.Windows.RoutedEventArgs e)
         {
-            var scrollViewer = this.GetVisualChild<ScrollViewer>();
-            if (scrollViewer != null)
+            if (this.ScrollBar != null)
             {
-                var scrollBar = scrollViewer.Template.FindName("PART_VerticalScrollBar", scrollViewer) as ScrollBar;
-                if (scrollBar != null)
-                {
-                    scrollBar.ValueChanged += delegate
-                    {
-                        var count =  (int) scrollViewer.ViewportHeight;
-                        var startIndex = (int) scrollViewer.VerticalOffset + count;
-                        GetChildren(startIndex, count);
-                    };
-                }
+                this.ScrollBar.ValueChanged += delegate { LoadChildren(); };
             }
         }
 
-        private void GetChildren(int startIndex, int count)
+        private void LoadChildren()
+        {
+            if (this.ScrollBar != null)
+            {
+                var count = (int) this.ScrollViewer.ViewportHeight;
+                var startIndex = (int) this.ScrollViewer.VerticalOffset + count;
+                GetChildren(startIndex, count);
+            }
+        }
+
+        public void GetChildren(int startIndex, int count)
         {
             int finalIndex = startIndex + count;
             if (this.Items.Count > finalIndex)
@@ -74,8 +128,5 @@ namespace ExtendedControls
         }
 
         #endregion
-
     }
-
-
 }

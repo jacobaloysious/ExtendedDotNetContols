@@ -24,5 +24,10 @@ namespace LoadOnScroll
         {
             InitializeComponent();
         }
+
+        private void ItemsCountClick(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(string.Format("Number of Items in the List Box : {0}",this.listBox.Items.Count.ToString()), "Items count");
+        }
     }
 }

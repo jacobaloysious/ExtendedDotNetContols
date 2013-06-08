@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoExtendedControls", "Dem
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtendedControls", "ExtendedControls\ExtendedControls.csproj", "{26D2E401-955B-443B-8364-E1A91AAE996D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestExtendedControls", "TestExtendedControls\TestExtendedControls.csproj", "{BFFF4B93-3B58-4E62-9FCD-B677A7ADE7C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,16 @@ Global
 		{26D2E401-955B-443B-8364-E1A91AAE996D}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{26D2E401-955B-443B-8364-E1A91AAE996D}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{26D2E401-955B-443B-8364-E1A91AAE996D}.Release|x86.ActiveCfg = Release|Any CPU
+		{BFFF4B93-3B58-4E62-9FCD-B677A7ADE7C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFFF4B93-3B58-4E62-9FCD-B677A7ADE7C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFFF4B93-3B58-4E62-9FCD-B677A7ADE7C2}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{BFFF4B93-3B58-4E62-9FCD-B677A7ADE7C2}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{BFFF4B93-3B58-4E62-9FCD-B677A7ADE7C2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BFFF4B93-3B58-4E62-9FCD-B677A7ADE7C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFFF4B93-3B58-4E62-9FCD-B677A7ADE7C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFFF4B93-3B58-4E62-9FCD-B677A7ADE7C2}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{BFFF4B93-3B58-4E62-9FCD-B677A7ADE7C2}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{BFFF4B93-3B58-4E62-9FCD-B677A7ADE7C2}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

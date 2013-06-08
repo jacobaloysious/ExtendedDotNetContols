@@ -2,8 +2,8 @@ ExtendedDotNetContols
 =====================
 
 Contains an Extended `ListBox` Control, which has an abstract method `GetChild`. 
-Which would be queried when the user scrolls horizontally.
-Every scroll will add a set of items to the bottom of the `ListBox` based on the Number of Items that are currently displayed/visible items.
+Which would be queried when the user scrolls Vertically.
+Every scroll will add a set of items to the bottom of the `ListBox` based on the Number of Items that are currently displayed/visible.
 
 A `Demo application` has been added to showcase this functionality.
 
@@ -11,7 +11,7 @@ A `Demo application` has been added to showcase this functionality.
 Background:
 ==============
 
-In order to Display a List Box in the UI, and If that list Box has way too much of data. 
+In order to Display a `List Box` in the UI, and if that `ListBox` has way too much of items. 
 User would wait until he retrives all the data and then load it to the UI/ListBox.
 Or show a progress bar and load the List in the background.
 
@@ -23,7 +23,7 @@ Solution
 ============
 
 By using `ExtendedListBox` class. 
-The user gets a `call back` evey time the user scrolls Horizontally.
+The user gets a `call back` evey time the user scrolls Vertically.
 
 The Callback method request for the `index` of the `List` that is about to be displayed in the UI.
 

@@ -1,7 +1,16 @@
 ﻿<Window x:Class="LoadOnScroll.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:LoadOnScroll="clr-namespace:LoadOnScroll" Title="MainWindow" SizeToContent="WidthAndHeight" >
-    <StackPanel>
-        <LoadOnScroll:MyExtendedTestListBox x:Name="listBox" Height="70"/>
-    </StackPanel>
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:LoadOnScroll="clr-namespace:LoadOnScroll" 
+        Height="400" Width="300" Title="Demo Extended List Box">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="70*"/>
+            <RowDefinition Height="20*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Scroll And Check the Items Count " Grid.Row="0" Margin="5,5" Foreground="Red"/>
+        <LoadOnScroll:MyExtendedTestListBox x:Name="listBox" Grid.Row="1" Margin="5,5"/>
+        <Button Click="ItemsCountClick" Content="Items Count" Grid.Row="2" Margin="5,5"/>
+        
+    </Grid>
 </Window>
