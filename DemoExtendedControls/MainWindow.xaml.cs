@@ -29,5 +29,11 @@ namespace LoadOnScroll
         {
             MessageBox.Show(string.Format("Number of Items in the List Box : {0}",this.listBox.Items.Count.ToString()), "Items count");
         }
+
+        private void DataGridItemsCountClick(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(string.Format("Number of Items in the List Box : {0}", this.dataGrid.Items.Count.ToString()), "Items count");
+        }
+
     }
 }
